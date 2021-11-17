@@ -50,8 +50,8 @@
         <div class="row align-items-center">
           <div class="col-md-12">
  
-            <h1><a class="text-light">CONTINUOUS WAVELET TRANSFORM BASED HYBRID FILTERING FOR REAL-TIME EMOTIONAL VOICE CONVERSION</h1><br> 
-             <font size=5><span style="color:#000000"> Authors: Zhaojie Luo, Rui Liu, Shuyun Tang, Jun Baba, Yuichiro Yoshikawa, Hiroshi Ishiguro </font>  </a>   
+            <h1><a class="text-light">Decoupling Speaker-Independent Emotions for Voice Conversion Via Source-Filter Networks</h1><br> 
+             <font size=5><span style="color:#000000"> Authors: Zhaojie Luo, Shoufeng Lin, Rui Liu, Jun Baba, Yuichiro Yoshikawa, Ishiguro Hiroshi </font>  </a>   
             <p>
               <div class="row">
               </div>
@@ -67,14 +67,7 @@
       <div class="row" id="result">
         <div class="col-md-12">
         	<h5>Abstract:</h5> 
-        	Running emotional voice conversion (EVC) in real-time, using live input from a microphone, with low latency, 
-		while maintaining the quality of the converted voice remains an underexplored area. Some deep learning speaker 
-		VC methods attempt to read frames of speech in a streaming fashion, rather than complete speech sentences, 
-		to accelerate the real-time conversion. However, such methods deal only with short-term speech features, ignoring 
-		the long-term prosody features that are crucial in EVC. To address this issue, in this study, we propose a hybrid EVC 
-		framework that consists of short- and long-term filters to separately convert the prosody (F0) features of different 
-		temporal levels, ranging from micro-prosody to sentences, which are captured using the continuous wavelet transform. 
-		Experiments show that the proposed framework achieves competitive results for both similarity and naturalness in real-time conversion. 
+        	Emotional voice conversion (VC) aims to convert a neutral voice to an emotional (e.g. happy) one while retaining the linguistic information and speaker identity. We note that the decoupling of emotional features from other speech information (such as speaker, content, etc.) is the key to achieving remarkable performance. Some recent attempts about speech representation decoupling on the neutral speech can not work well on the emotional speech, due to the more complex acoustic properties involved in the latter. To address this problem, here we propose a novel Source-Filter-based Emotional VC model (SFEVC) to achieve proper filtering of speaker-independent emotion features from both the timbre and pitch features. Our SFEVC model consists of multi-channel encoders, emotion separate encoders, and one decoder. Note that all encoder modules adopt a designed information bottlenecks auto-encoder. Additionally, to further improve the conversion quality for various emotions, a novel two-stage training strategy based on the 2D Valence-Arousal (VA) space was proposed. Experimental results show that the proposed SFEVC along with a two-stage training strategy outperforms all baselines and achieves the state-of-the-art performance in speaker-independent emotional VC with nonparallel data. 
 		<br>
 <br>
 <br>
