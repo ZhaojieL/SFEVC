@@ -90,8 +90,7 @@
                     <h6>(2) <b>Dual-SANs [2] </b>: This model adopts the dual supervised adversarial network, in which continuous wavelet transform method was used to augment prosody (F0) features. </h6>
                     <h6>(3) <b>CycleGAN [3] </b>: The CycleGAN model has been widely used in the non-parallel VC tasks. Kun et al. have also used this unsupervised learning model in the emotional VC. </h6> 
 	            <h6>(4) <b>SPEECHFLOW [4]  </b>: This is a state-of-the-art source filter method that has been used in the voice conversion. We applied it in the emotional VC that uses the designed bottlenecks auto-encoder for filtering the timbre and prosody features. </h6>  
-	            <h6>(5) <b>SFEVC </b>: This is our proposed method SFEVC that uses designed bottlenecks multi-channel encoders and the emotion-separate encoders, while without two-stage training. </h6>  
-	            <h6>(6) <b>SFEVC+VA </b>: We adopt the novel VA-based twostages training to train our SFEVC, denoted as SFEVC+VA. This model was built to validate the effectiveness of the two-stage training. </h6>  
+	            <h6>(5) <b>SFEVC </b>: This is our proposed method SFEVC that uses designed bottlenecks multi-channel encoders and the emotion-separate encoders, while without two-stage training. </h6>   
                      <br />
 	             <table class="table">
                       <thead>
@@ -108,9 +107,11 @@
                                 <tr>
                                     
                                     <td style="text-align: center; width: 100px;">  Source</th>
-                                    <td style="text-align: center; width: 100px;">  Baseline</th>
+                                    <td style="text-align: center; width: 100px;">  DBNs+NNs</th>
                                     <td style="text-align: center; width: 100px;">  Dual-SANs</th>
-                                    <td style="text-align: center; width: 100px;">  Proposed (S+L)</th>
+                                    <td style="text-align: center; width: 100px;">  CycleGAN </th>
+			            <td style="text-align: center; width: 100px;">  SPEECHFLOW </th>
+	                            <td style="text-align: center; width: 100px;">  SFEVC </th>	     
                                     <td style="text-align: center; width: 100px;">  Target</th>
                           
                                 </tr> 
@@ -121,32 +122,44 @@
                         </tr>
                                   <td>
                                     <audio controls>
-                                      <source src="./samples/source/N2A.wav" type="audio/wav" />
+                                      <source src="./samples/source/N2H.wav" type="audio/wav" />
                                       Your browser does not support the audio element.
                                     </audio>
                                 
                                   </td>
                                   <td>
                                     <audio controls>
-                                      <source src="./samples/baseline/N2A.wav"  type="audio/wav" />
+                                      <source src="./samples/DBNs+NNs/N2H.wav"  type="audio/wav" />
                                       Your browser does not support the audio element.
                                     </audio>
                                   </td>
                                   <td>
                                     <audio controls>
-                                      <source src="./samples/dual-SANs/N2A.wav"  type="audio/wav" />
+                                      <source src="./samples/dual-SANs/N2H.wav"  type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+			         </td>    
+                                 <td>
+                                    <audio controls>
+                                      <source src="./samples/CycleGAN/N2H.wav" type="audio/wav" />
                                       Your browser does not support the audio element.
                                     </audio>
                                   </td>    
                                  <td>
                                     <audio controls>
-                                      <source src="./samples/proposed/N2A_S+L.wav" type="audio/wav" />
+                                      <source src="./samples/SPEECHFLOW/N2H.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                   <td>
+			          <audio controls>
+                                      <source src="./samples/SFEVC/N2H.wav" type="audio/wav" />
                                       Your browser does not support the audio element.
                                     </audio>
                                   </td>
                                    <td>
                                    <audio controls>
-                                      <source src="./samples/target01/N2A.wav"  type="audio/wav" />
+                                      <source src="./samples/target01/N2H.wav"  type="audio/wav" />
                                       Your browser does not support the audio element.
                                     </audio>
                                   </td>                      
