@@ -1,4 +1,4 @@
-# HF-RealtimeEVC
+# SFEVC
 
 __"Decoupling Speaker-Independent Emotions for Voice Conversion Via Source-Filter Networks"__
 
