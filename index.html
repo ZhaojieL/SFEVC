@@ -90,8 +90,9 @@
                     <h6>(2) <b>Dual-SANs [2] </b>: This model adopts the dual supervised adversarial network, in which continuous wavelet transform method was used to augment prosody (F0) features. </h6>
                     <h6>(3) <b>CycleGAN [3] </b>: The CycleGAN model has been widely used in the non-parallel VC tasks. Kun et al. have also used this unsupervised learning model in the emotional VC. </h6> 
 	            <h6>(4) <b>SPEECHFLOW [4]  </b>: This is a state-of-the-art source filter method that has been used in the voice conversion. We applied it in the emotional VC that uses the designed bottlenecks auto-encoder for filtering the timbre and prosody features. </h6>  
-	            <h6>(5) <b>SFEVC </b>: This is our proposed method SFEVC that uses designed bottlenecks multi-channel encoders and the emotion-separate encoders, while without two-stage training. </h6>   
-                     <br />
+	            <h6>(5) <b>SFEVC </b>: This is our proposed method SFEVC that uses designed bottlenecks multi-channel encoders and the emotion-separate encoders, while without VA training. </h6>   
+                    <h6>(6) <b>SFEVC+VA </b>: This is our proposed method SFEVC that uses designed bottlenecks multi-channel encoders and the emotion-separate encoders with VA training. </h6>   
+	             <br />
 	             <table class="table">
                       <thead>
                             <th colspan=5><h4> Emotion Similarity Test </h4></th>
@@ -111,7 +112,8 @@
                                     <td style="text-align: center; width: 100px;">  Dual-SANs</th>
                                     <td style="text-align: center; width: 100px;">  CycleGAN </th>
 			            <td style="text-align: center; width: 100px;">  SPEECHFLOW </th>
-	                            <td style="text-align: center; width: 100px;">  SFEVC </th>	     
+	                            <td style="text-align: center; width: 100px;">  SFEVC </th>
+	                            <td style="text-align: center; width: 100px;">  SFEVC+VA </th>	
                                     <td style="text-align: center; width: 100px;">  Target</th>
                           
                                 </tr> 
@@ -154,6 +156,12 @@
                                    <td>
 			          <audio controls>
                                       <source src="./samples/SFEVC/N2A.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                   <td>
+				 <audio controls>
+                                      <source src="./samples/SFEVC+VA/N2A.wav" type="audio/wav" />
                                       Your browser does not support the audio element.
                                     </audio>
                                   </td>
@@ -207,6 +215,12 @@
                                     </audio>
                                   </td>
                                    <td>
+			  	 <audio controls>
+                                      <source src="./samples/SFEVC+VA/N2H.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                   <td>
                                    <audio controls>
                                       <source src="./samples/target01/N2H.wav"  type="audio/wav" />
                                       Your browser does not support the audio element.
@@ -256,57 +270,14 @@
                                     </audio>
                                   </td>
                                    <td>
+				 <audio controls>
+                                      <source src="./samples/SFEVC+VA/N2S.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                   <td>
                                    <audio controls>
                                       <source src="./samples/target01/N2S.wav"  type="audio/wav" />
-                                      Your browser does not support the audio element.
-                                    </audio>
-                                  </td>                      
-                                  </tr>
-	                          <tr>
-             
-                            <th colspan=3><h8>(4) Neutral-to-Surprise</h8></th>
-                        </tr>
-  <!--  single sentence -->
-                      <td>
-                                    <audio controls>
-                                      <source src="./samples/source/N2Su.wav" type="audio/wav" />
-                                      Your browser does not support the audio element.
-                                    </audio>
-                                
-                                  </td>
-                                  <td>
-                                    <audio controls>
-                                      <source src="./samples/DBN+NNs/N2Su.wav"  type="audio/wav" />
-                                      Your browser does not support the audio element.
-                                    </audio>
-                                  </td>
-                                  <td>
-                                    <audio controls>
-                                      <source src="./samples/dual-SANs/N2Su.wav"  type="audio/wav" />
-                                      Your browser does not support the audio element.
-                                    </audio>
-			         </td>    
-                                 <td>
-                                    <audio controls>
-                                      <source src="./samples/cycleGAN/N2Su.wav" type="audio/wav" />
-                                      Your browser does not support the audio element.
-                                    </audio>
-                                  </td>    
-                                 <td>
-                                    <audio controls>
-                                      <source src="./samples/SPEECHFLOW/N2Su.wav" type="audio/wav" />
-                                      Your browser does not support the audio element.
-                                    </audio>
-                                  </td>
-                                   <td>
-			          <audio controls>
-                                      <source src="./samples/SFEVC/N2Su.wav" type="audio/wav" />
-                                      Your browser does not support the audio element.
-                                    </audio>
-                                  </td>
-                                   <td>
-                                   <audio controls>
-                                      <source src="./samples/target01/N2Su.wav"  type="audio/wav" />
                                       Your browser does not support the audio element.
                                     </audio>
                                   </td>                      
