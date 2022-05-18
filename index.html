@@ -88,13 +88,13 @@
                   
                     <h6> (1) <b>DBNs+NNs [1] </b>: This is the earliest emotional VC method based on deep learning models. The model uses the DBNs to convert spectral features while using the NNs to convert the F0 features. </h6>
                     <h6>(2) <b>Dual-SANs [2] </b>: This model adopts the dual supervised adversarial network, in which continuous wavelet transform method was used to augment prosody (F0) features. </h6>
-	            <h6>(3) <b>SPEECHFLOW [4]  </b>: This is a state-of-the-art source filter method that has been used in the voice conversion. We applied it in the emotional VC that uses the designed bottlenecks auto-encoder for filtering the timbre and prosody features. </h6>  
+	            <h6>(3) <b>SPEECHFLOW [3]  </b>: This is a state-of-the-art source filter method that has been used in the voice conversion. We applied it in the emotional VC that uses the designed bottlenecks auto-encoder for filtering the timbre and prosody features. </h6>  
 	            <h6>(4) <b>SFEVC </b>: This is our proposed method SFEVC that uses designed bottlenecks multi-channel encoders and the emotion-separate encoders, while without VA training. </h6>   
                     <h6>(5) <b>SFEVC+VA </b>: This is our proposed method SFEVC that uses designed bottlenecks multi-channel encoders and the emotion-separate encoders with VA training. </h6>   
 	             <br />
 	             <table class="table">
                       <thead>
-                            <th colspan=5><h4> Emotion Similarity Test </h4></th>
+                            <th colspan=5><h4> Speech Naturalness Test  </h4></th>
                         <tr>
              
                       
@@ -109,7 +109,6 @@
                                     <td style="text-align: center; width: 100px;">  Source</th>
                                     <td style="text-align: center; width: 100px;">  DBNs+NNs</th>
                                     <td style="text-align: center; width: 100px;">  Dual-SANs</th>
-                                    <td style="text-align: center; width: 100px;">  CycleGAN </th>
 			            <td style="text-align: center; width: 100px;">  SPEECHFLOW </th>
 	                            <td style="text-align: center; width: 100px;">  SFEVC </th>
 	                            <td style="text-align: center; width: 100px;">  SFEVC+VA </th>	
@@ -316,11 +315,173 @@
                                     </audio>
                                   </td>                      
                            	
-                      </tbody>    
+                                
+ </tbody>                   
 
-                          </table>
+                    </table>
 
-                     
+                                        <table class="table">
+                      <thead>
+                            <th colspan=5><h4>Emotion Similarity Test</h4></th>
+                        <tr>
+             
+                         
+                        </tr>
+                      <tbody>
+                                
+                                
+                                <tr>
+                                    <th></th>
+                                    <th style="text-align:center;">  Source</th>
+                                    <th style="text-align:center;">  SFEVC</th>
+                                    <th style="text-align:center;">  SFEVC+VA</th>
+				    <th style="text-align:center;">  Target</th>
+                              
+                          
+                                </tr>
+                                                                  </tr>
+                                   <th colspan=3><h8>(1) Neutral-to-Angry</h8></th>
+                               </tr>
+                                <!-- single sentence -->
+
+                                <tr>
+                                  <th scope="row">    </th>
+                                  <td>
+                                    <audio controls>
+                                       <source src="./samples/source/N2A.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                       <source src="./samples/SFEVC/N2A.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                       <source src="./samples/SFEVC+VA/N2A.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+			          </td>
+                                  <td>
+                                    <audio controls>
+                                       <source src="./samples/target01/N2A.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                  
+         
+                                                                                                  </tr>
+                                   <th colspan=3><h8>(2) Neutral-to-Happy</h8></th>
+                               </tr>
+
+
+                                  <!-- single sentence -->
+
+                                <tr>
+                                  <th scope="row">    </th>
+                                  <td>
+                                    <audio controls>
+                                       <source src="./samples/source/N2H.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                       <source src="./samples/SFEVC/N2H.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                       <source src="./samples/SFEVC+VA/N2H.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+			          </td>
+                                  <td>
+                                    <audio controls>
+                                       <source src="./samples/target01/N2H.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+
+                                                                                                 </tr>
+                                   <th colspan=3><h8>(3) Neutral-to-Sad</h8></th>
+                               </tr>
+                                 <!-- single sentence -->
+
+                                <tr>
+                                  <th scope="row">    </th>
+                                  <td>
+                                    <audio controls>
+                                       <source src="./samples/source/N2S.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                       <source src="./samples/SFEVC/N2S.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                       <source src="./samples/SFEVC+VA/N2S.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+			          </td>
+                                  <td>
+                                    <audio controls>
+                                       <source src="./samples/target01/N2S.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+
+                               <tr>                                                                  </tr>
+                                   <th colspan=3><h8>(4) Neutral-to-High Tension Voice</h8></th>
+                               </tr>
+                                                              </tr>
+                                <!-- single sentence -->
+
+                                <tr>
+                                  <th scope="row">    </th>
+                                  <td>
+                                    <audio controls>
+                                       <source src="./samples/source/N2Hi.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                       <source src="./samples/SFEVC/N2Hi.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                       <source src="./samples/SFEVC+VA/N2Hi.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+			          </td>
+                                  <td>
+                                    <audio controls>
+                                       <source src="./samples/target01/N2Hi.mp3" type="audio/mp3" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+
+
+                      </tbody>
+                       
+
+                    </table>
+
+
 
           <br /><br />
                      <h3>Audio Samples of Released HTE Database:</h3>
@@ -445,10 +606,8 @@
           [1] Zhaojie Luo, Tetsuya Takiguchi, and Yasuo Ariki, “Emotional voice conversion using deep neural networks with mcc and f0 features,” in 2016 IEEE/ACIS 15th International Conference on Computer and Information Science (ICIS). IEEE, 2016, pp. 1–5.
           <br/>
           [2] Zhaojie Luo, Jinhui Chen, Tetsuya Takiguchi, and Yasuo Ariki, “Emotional voice conversion using dual supervised adversarial networks with continuous wavelet transform f0 features,” IEEE/ACM Transactions on Audio, Speech, and Language Processing, vol. 27, no. 10, pp. 1535–1548, 2019.
-          <br/>
-          [3] K. Zhou, B. Sisman, and H. Li, “Transforming spectrum and prosody for emotional voice conversion with non-parallel training data,” arXiv preprint arXiv:2002.00198, 2020. 
-          <br/>           
-          [4] K. Qian, Y. Zhang, S. Chang, M. Hasegawa-Johnson, and D. Cox, “Unsupervised speech decomposition via triple information bottleneck,” in International Conference on Machine Learning. PMLR, 2020, pp. 7836–7846.
+          <br/> 
+          [3] K. Qian, Y. Zhang, S. Chang, M. Hasegawa-Johnson, and D. Cox, “Unsupervised speech decomposition via triple information bottleneck,” in International Conference on Machine Learning. PMLR, 2020, pp. 7836–7846.
           <br>
            
            </div>
